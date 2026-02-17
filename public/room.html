@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Chat Room - Student Chat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="chat-container">
+            <div class="chat-header">
+                <div class="header-info">
+                    <h2 class="room-title">🎮 ROOM: <span id="roomCodeDisplay">----</span></h2>
+                    <p class="user-info">User: <span id="usernameDisplay">Guest</span></p>
+                    <p class="users-online">👥 Online: <span id="userCount">1</span></p>
+                </div>
+                <button id="leaveRoomBtn" class="pixel-button danger">
+                    ❌ LEAVE
+                </button>
+            </div>
+
+            <div class="chat-messages" id="chatMessages">
+                <div class="system-message">
+                    🎉 Selamat datang di chat room!
+                </div>
+            </div>
+
+            <div class="chat-input-section">
+                <div class="input-wrapper">
+                    <button id="attachBtn" class="attach-button" title="Attach File">
+                        📎
+                    </button>
+                    <input type="text" id="messageInput" class="pixel-input message-input" placeholder="Ketik pesan..." maxlength="2000" autocomplete="off">
+                    <button id="voiceBtn" class="voice-button" title="Voice Note">
+                        🎤
+                    </button>
+                    <button id="sendBtn" class="send-button">
+                        📨
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hidden file inputs -->
+    <input type="file" id="imageInput" accept="image/*" style="display: none;" multiple>
+    <input type="file" id="videoInput" accept="video/*" style="display: none;">
+    <input type="file" id="fileInput" style="display: none;">
+
+    <!-- Attach Menu Modal -->
+    <div id="attachModal" class="modal">
+        <div class="modal-content attach-menu">
+            <h3 class="modal-title">PILIH ATTACHMENT</h3>
+            <button class="attach-option" id="attachImageBtn">
+                📸 Foto / Gambar
+            </button>
+            <button class="attach-option" id="attachVideoBtn">
+                🎥 Video
+            </button>
+            <button class="attach-option" id="attachFileBtn">
+                📁 File / Dokumen
+            </button>
+            <button class="attach-option cancel" id="attachCancelBtn">
+                ❌ Batal
+            </button>
+        </div>
+    </div>
+
+    <!-- Preview Modal -->
+    <div id="previewModal" class="modal">
+        <div class="modal-content preview-content">
+            <button class="modal-close" id="previewCloseBtn">×</button>
+            <div id="previewContainer"></div>
+            <div class="preview-actions">
+                <input type="text" id="captionInput" class="pixel-input" placeholder="Tambah caption (opsional)..." maxlength="200">
+                <button id="sendPreviewBtn" class="pixel-button">
+                    📨 KIRIM
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Voice Recording Modal -->
+    <div id="voiceModal" class="modal">
+        <div class="modal-content voice-content">
+            <h3 class="modal-title">🎤 REKAM SUARA</h3>
+            <div class="voice-visualizer">
+                <div class="recording-indicator">
+                    <div class="pulse"></div>
+                    <span id="recordingTime">00:00</span>
+                </div>
+                <canvas id="voiceCanvas" width="300" height="100"></canvas>
+            </div>
+            <div class="voice-actions">
+                <button id="cancelVoiceBtn" class="pixel-button danger">
+                    ❌ BATAL
+                </button>
+                <button id="stopVoiceBtn" class="pixel-button">
+                    ⏹️ SELESAI
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Media Viewer Modal -->
+    <div id="mediaViewerModal" class="modal">
+        <div class="modal-content media-viewer">
+            <button class="modal-close" id="mediaViewerCloseBtn">×</button>
+            <div id="mediaViewerContainer"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
