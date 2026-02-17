@@ -1,5 +1,13 @@
-[phases.setup]
-nixPkgs = ["nodejs_20"]
+FROM node:18-alpine
 
-[start]
-cmd = "node server.js"
+WORKDIR /app
+
+COPY package*.json ./
+
+RUN npm install
+
+COPY . .
+
+EXPOSE 3000
+
+CMD ["node", "server.js"]
