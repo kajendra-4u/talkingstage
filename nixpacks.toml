@@ -1,13 +1,5 @@
-FROM node:18-alpine
+[phases.install]
+cmds = ["npm install --legacy-peer-deps"]
 
-WORKDIR /app
-
-COPY package*.json ./
-
-RUN npm install
-
-COPY . .
-
-EXPOSE 3000
-
-CMD ["node", "server.js"]
+[start]
+cmd = "node server.js"
