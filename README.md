@@ -1,8 +1,8 @@
-# 🎮 STUDENT CHAT V2.1 - COMPLETE & FINAL
+# STUDENT CHAT V2.1 - COMPLETE & FINAL
 
-## ✨ SEMUA FITUR LENGKAP
+##  SEMUA FITUR LENGKAP
 
-### 📱 **Chat Features**
+###  **Chat Features**
 - ✅ Real-time text messaging
 - ✅ Create room dengan kode custom (5 karakter)
 - ✅ Join room dengan kode
@@ -10,7 +10,7 @@
 - ✅ User online counter
 - ✅ Auto-delete room saat kosong
 
-### 📸 **Media Upload**
+###  **Media Upload**
 - ✅ **Kirim Foto/Gambar** - Semua format (JPG, PNG, GIF, WebP, dll)
 - ✅ **Kirim Video** - Semua format (MP4, WebM, MOV, AVI, dll)
 - ✅ **Kirim File** - Semua jenis file (PDF, DOC, ZIP, TXT, dll)
@@ -18,21 +18,21 @@
 - ✅ **Tambah caption** - Opsional untuk foto/video
 - ✅ **Unlimited file size** - Base64 encoding
 
-### 🎤 **Voice Note**
+###  **Voice Note**
 - ✅ Rekam suara dari browser
 - ✅ Visualisasi audio real-time (waveform)
 - ✅ Timer durasi rekaman
 - ✅ Play/pause voice note
 - ✅ Durasi ditampilkan
 
-### 🔄 **Loading Indicators**
+###  **Loading Indicators**
 - ✅ **Loading spinner** saat upload media
 - ✅ **Blur effect** untuk preview foto/video
 - ✅ **Status "Mengirim..."** 
 - ✅ **Pulse glow** animation
 - ✅ **Auto remove** setelah terkirim
 
-### 📱 **Responsive Design**
+###  **Responsive Design**
 - ✅ Perfect di **Mobile** (Android & iOS)
 - ✅ Perfect di **Tablet**
 - ✅ Perfect di **Desktop/Monitor**
@@ -40,7 +40,7 @@
 - ✅ **Touch-optimized** untuk touchscreen
 - ✅ **Adaptive font sizes**
 
-### 🎨 **UI/UX**
+###  **UI/UX**
 - ✅ **Pixel game aesthetic** (Press Start 2P font)
 - ✅ **Dark theme** dengan glow effects
 - ✅ **WhatsApp-like** interface
@@ -48,7 +48,7 @@
 - ✅ **Modal popups** untuk menu
 - ✅ **Media viewer** dengan fullscreen
 
-### 🔒 **Privacy & Security**
+###  **Privacy & Security**
 - ✅ **No database** - Semua di memory
 - ✅ **No tracking** - Privacy-first
 - ✅ **Auto delete** - Pesan hilang saat room kosong
@@ -57,7 +57,7 @@
 
 ---
 
-## 📁 STRUKTUR FILE FINAL
+## STRUKTUR FILE FINAL
 
 ```
 student-chat/
